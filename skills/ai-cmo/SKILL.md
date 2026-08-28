@@ -1,6 +1,6 @@
 ---
 name: ai-cmo
-description: Reads this account's AI CMO marketing library from the BotBuilders. Use for any marketing task — strategy, positioning, budget and planning, paid ads on any platform, SEO, GEO and AI search visibility, copywriting for email, landing pages, ads, SMS and social, PR and influencer and affiliate programs, conversion optimization, attribution, retention, and client reporting.
+description: Reads this account's AI CMO marketing library from BotBuilders. Use for any marketing task — strategy, positioning, budget and planning, paid ads on any platform, SEO, GEO and AI search visibility, copywriting for email, landing pages, ads, SMS and social, PR and influencer and affiliate programs, conversion optimization, attribution, retention, and client reporting.
 ---
 
 # AI CMO
