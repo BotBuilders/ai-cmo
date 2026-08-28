@@ -1,0 +1,8 @@
+{
+  "name": "ai-cmo",
+  "version": "1.0.0",
+  "description": "BotBuilders AI CMO — a marketing department in one plugin: strategy, paid media, SEO, GEO, copywriting, earned and shared media, conversion optimization, and reporting.",
+  "author": { "name": "BotBuilders", "email": "support@botbuilders.com" },
+  "keywords": ["marketing","cmo","strategy","paid-ads","seo","geo","copywriting","pr","reporting"],
+  "dependencies": ["ai-skills"]
+}

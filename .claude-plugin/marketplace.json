@@ -1,0 +1,11 @@
+{
+  "name": "ai-cmo",
+  "owner": { "name": "BotBuilders", "email": "support@botbuilders.com" },
+  "description": "BotBuilders AI CMO — the marketing product plugin, plus the shared AI Skills library connection it needs.",
+  "plugins": [
+    { "name": "ai-cmo", "source": ".", "description": "BotBuilders AI CMO — marketing strategy, paid media, SEO, GEO, copywriting and reporting." },
+    { "name": "ai-skills",
+      "source": { "source": "github", "repo": "BotBuilders/ai-skills", "ref": "main" },
+      "description": "Shared AI Skills library connection. Installed automatically with any BotBuilders product." }
+  ]
+}
