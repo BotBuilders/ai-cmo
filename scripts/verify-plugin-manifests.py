@@ -14,6 +14,8 @@ import pathlib
 import sys
 
 FORBIDDEN_KEYS = ("feature_tag", "skill_tag_ids", "entitlement")
+# dist/ holds build output, whose manifest deliberately breaks these rules.
+IGNORED = {".git", "node_modules", "dist"}
 
 root = pathlib.Path(__file__).resolve().parent.parent
 errors: list[str] = []
@@ -37,7 +39,7 @@ if root_manifest is None:
 
 manifests = sorted(
     p for p in root.rglob(".claude-plugin/plugin.json")
-    if ".git" not in p.parts and "node_modules" not in p.parts
+    if not IGNORED.intersection(p.parts)
 )
 
 declaring = [p for p in manifests if isinstance((load(p) or {}).get("mcpServers"), dict)]
@@ -77,7 +79,7 @@ for path in manifests:
             )
 
 for path in sorted(root.rglob(".claude-plugin/marketplace.json")):
-    if ".git" in path.parts:
+    if IGNORED.intersection(path.parts):
         continue
     market = load(path)
     if market is None:

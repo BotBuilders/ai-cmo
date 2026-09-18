@@ -1,0 +1,43 @@
+{
+  "name": "ai-cmo",
+  "version": "1.0.0",
+  "description": "BotBuilders AI CMO: a marketing department in one plugin. Strategy, paid media, SEO, GEO, copywriting, earned and shared media, conversion optimization, and reporting, read from your BotBuilders skills library.",
+  "author": {
+    "name": "BotBuilders",
+    "email": "support@botbuilders.com",
+    "url": "https://botbuilders.com"
+  },
+  "homepage": "https://botbuilders.com",
+  "keywords": [
+    "marketing",
+    "cmo",
+    "strategy",
+    "paid-ads",
+    "seo",
+    "geo",
+    "copywriting",
+    "pr",
+    "reporting"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "AI CMO",
+    "shortDescription": "A marketing department in one plugin, by BotBuilders.",
+    "longDescription": "Ask in plain English and the right specialist skill picks itself up: strategy, paid media, SEO, GEO, copywriting, earned and shared media, conversion work, and reporting. It drafts; you approve. It never launches, spends, publishes, sends, or pitches on its own, and it never invents a fact about your business.",
+    "developerName": "BotBuilders",
+    "category": "Marketing",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://botbuilders.com",
+    "privacyPolicyURL": "https://botbuilders.com/privacy",
+    "termsOfServiceURL": "https://botbuilders.com/terms",
+    "defaultPrompt": [
+      "We need more leads and I don't know where to start.",
+      "Why are we invisible in ChatGPT when we rank first on Google?",
+      "Write the five-email sequence for the launch."
+    ],
+    "brandColor": "#111111"
+  }
+}

@@ -1,0 +1,16 @@
+interface:
+  display_name: "AI CMO"
+  short_description: "Your marketing department, from the BotBuilders library"
+  default_prompt: "Use $ai-cmo to plan, write, or review marketing work from my library."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "list_skills"
+      description: "Lists the chapters of the AI CMO library. Call with path ai-cmo."
+      transport: "streamable_http"
+      url: "https://ai-skills.botbuilders.com/mcp/"
+    - type: "mcp"
+      value: "get_skill"
+      description: "Reads one chapter of the AI CMO library in full, page by page."
+      transport: "streamable_http"
+      url: "https://ai-skills.botbuilders.com/mcp/"
